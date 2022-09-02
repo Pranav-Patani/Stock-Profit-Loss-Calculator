@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;800&display=swap");
+
+/**Basic Setup**/
+
+:root {
+  --primary-color: #1d4ed8;
+  --text-color-light: #eff6ff;
+  --text-color-dark: #1e3a8a;
+  --gradient-light: #2563eb;
+  --gradient-dark: var(--primary-color);
+  --input-fields: #3b82f6;
+  --button-color: #1e40af;
+  --border-color: #1e40af;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    var(--gradient-dark),
+    var(--gradient-light)
+  );
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--text-color-light);
+}
+
+/**Header**/
+
+.hero {
+  background-image: linear-gradient(
+    var(--gradient-light),
+    var(--gradient-dark)
+  );
+  padding: 2rem;
+  color: var(--text-color-light);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/**Calculator**/
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    var(--gradient-light),
+    var(--gradient-dark)
+  );
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.input {
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-fields);
+  color: var(--text-color-dark);
+  font-weight: bolder;
+}
+
+.input-label {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.button {
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  background-color: var(--button-color);
+  border: 1rem solid var(--quiz-border);
+  border-radius: 1rem;
+  color: var(--text-color-light);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/**Footer**/
+
+.footer {
+  background-image: linear-gradient(
+    var(--gradient-dark),
+    var(--gradient-light)
+  );
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.footer p {
+  width: 60%;
+  margin: 1rem auto;
+  font-weight: bold;
+}
